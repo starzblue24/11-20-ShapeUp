@@ -1,0 +1,27 @@
+// A Circle object represents a circle defined by a center point and a radius.
+public class Circle{
+Point center;
+double radius;
+public Circle()
+{
+  center.y=0;
+  center.x=0;
+  radius=0;
+}
+public Circle(Point centerPoint, Point circPoint)
+{
+  radius= Math.sqrt((centerPoint.x*circPoint.x)+(centerPoint.y*circPoint.y));
+}
+public Circle(Point center, double area)
+{
+
+}
+public double getRadius()
+{
+  return radius;
+}
+public double area()
+{
+    (radius*radius)*3.14159265359
+  return area;
+}
