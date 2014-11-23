@@ -1,0 +1,74 @@
+// A Rectangle object represents a rectangle defined by an origin point (bottom left corner), plus width and height.
+public class Rectangle{
+  Point origin= new Point();
+  int width;
+  int height;
+  public Rectangle()
+  {
+    height =0;
+    width=0;
+    origin.y=0;
+    origin.x=0;
+  }
+  public Rectangle(Point bottomLeft, Point topRight)
+  {
+    bottomLeft=new Point();
+    topRight=new Point();
+  }
+  public Rectangle(Point q, int r, int k)
+  {
+    bottomLeft(width, height);
+  }
+  public Point getBottomLeft()
+  {
+    return origin;
+  }
+  public Point getTopRight()
+  {
+    return topRight;
+  }
+  public int getHeight()
+  {
+    return height;
+  }
+  public int getWidth()
+  {
+    return width;
+  }
+  public double area()
+  {
+    double area=height*width;
+    return area;
+  }
+  public double diagonal()
+  {
+return    Math.sqrt((bottomLeft.x*topRight.x)+(bottomLeft.y*topRight.y));
+  }
+  public int perimeter()
+  {
+    return (width+width+height+height);
+  }
+  public boolean isSquare()
+  {
+    if(width==height)
+    {
+      return true;
+    }
+    else{
+      return false;
+    }
+  }
+  public String toString()
+  {
+return    "["+bottomLeft.toString()+","+topRight()+"]";
+  }
+public void translate(int dx, int dy)
+{
+bottomLeft.translate(dx,dy);
+topRight.translate(dx,dy);
+}
+public void scale(int g, int d)
+{
+}
+
+}
